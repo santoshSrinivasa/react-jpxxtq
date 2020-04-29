@@ -1,0 +1,27 @@
+import React,{useState} from "react";
+import {connect} from "react-redux";
+import {buyIcecream} from "./redux/icecream";
+
+function Icecream({numoficecreams,buyCake}){
+  const [number,setNumber] = useState(1);
+  return (
+    <div>
+    <h2>num of cakes - {numoficecreams}</h2>
+    <input type="text" value={number} onChange={(e)=> setNumber(e.target.value)}/>
+    <button onClick={()=>buyIcecream(number)}>buy {number} icecream</button>
+    </div>
+  )
+}
+
+const mapStateToProps = (state) => {
+  return {
+    numoficecreams : state.icecream.numoficecreams
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    buyIcecream: (number) => dispatch(buyIcecream(number))
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Icecream);

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {connect} from "react-redux";
-import {buyCake} from "./redux";
+import {buyCake} from "./redux/cake";
 
 function Cake({numofcakes,buyCake}){
   const [number,setNumber] = useState(1);
@@ -15,7 +15,7 @@ function Cake({numofcakes,buyCake}){
 
 const mapStateToProps = (state) => {
   return {
-    numofcakes : state.numofcakes
+    numofcakes : state.cake.numofcakes
   }
 }
 
