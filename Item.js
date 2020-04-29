@@ -12,6 +12,7 @@ function Item({item,buyitem}){
   )
 }
 
+//using ownProps as second parameter, specifies what all props has been passed to the component
 const mapStateToProps = (state,ownProps) => {
   const itemstate =  ownProps.cake ? state.cake.numofcakes : state.icecream.numoficecreams
   return {
