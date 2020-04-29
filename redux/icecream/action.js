@@ -1,6 +1,6 @@
 import {BUY_ICECREAM} from "./actionTypes";
 
-export const buyIcecream = (number) => {
+export const buyIcecream = (number = 1) => {
   return {
     type : BUY_ICECREAM,
     payload: number
