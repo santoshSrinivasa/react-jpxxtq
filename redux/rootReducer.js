@@ -1,4 +1,4 @@
-import {combineReducers} from "react-redux";
+import {combineReducers} from "redux";
 import cakeReducer from "./cake/cakeReducer";
 import icecreamReducer from "./icecream/icecreamReducer";
 

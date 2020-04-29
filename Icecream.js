@@ -2,11 +2,11 @@ import React,{useState} from "react";
 import {connect} from "react-redux";
 import {buyIcecream} from "./redux/icecream";
 
-function Icecream({numoficecreams,buyCake}){
+function Icecream({numoficecreams,buyIcecream}){
   const [number,setNumber] = useState(1);
   return (
     <div>
-    <h2>num of cakes - {numoficecreams}</h2>
+    <h2>num of icecreams - {numoficecreams}</h2>
     <input type="text" value={number} onChange={(e)=> setNumber(e.target.value)}/>
     <button onClick={()=>buyIcecream(number)}>buy {number} icecream</button>
     </div>
