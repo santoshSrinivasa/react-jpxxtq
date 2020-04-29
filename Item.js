@@ -20,6 +20,7 @@ const mapStateToProps = (state,ownProps) => {
   }
 }
 
+//using ownProps as second parameter, specifies what all props has been passed to the component
 const mapDispatchToProps = (dispatch,ownProps) => {
   const buy  = ownProps.cake ?
     () => dispatch(buyCake())
