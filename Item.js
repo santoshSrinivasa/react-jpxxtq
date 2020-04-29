@@ -29,4 +29,7 @@ const mapDispatchToProps = (dispatch,ownProps) => {
     buyitem : buy
   }
 }
+
+
+//connecting component to store
 export default connect(mapStateToProps,mapDispatchToProps)(Item);

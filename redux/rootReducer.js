@@ -7,4 +7,6 @@ const rootReducer = combineReducers({
   icecream : icecreamReducer
 })
 
+
+//combineReducers will combine more than one reducer into rootReducer
 export default rootReducer;

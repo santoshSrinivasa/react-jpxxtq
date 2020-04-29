@@ -19,4 +19,5 @@ class App extends Component {
   }
 }
 
+//Provider wraps the entire application to store
 export default App;

@@ -6,3 +6,5 @@ export const buyIcecream = (number = 1) => {
     payload: number
   }
 }
+
+//action creators will return the object with type property
